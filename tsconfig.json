@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "preserveWatchOutput": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+  },
+  "include": ["*.d.ts"]
+}

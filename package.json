@@ -1,0 +1,41 @@
+{
+  "name": "typedjs",
+  "version": "0.0.1",
+  "author": "Alex Dolid <dolid.sasha@gmail.com>",
+  "description": "High-level abstractions for writing type-safe javascript code",
+  "license": "MIT",
+  "keywords": [
+    "typedjs",
+    "tjs"
+  ],
+  "repository": {},
+  "bugs": {},
+  "homepage": "https://example.com",
+  "funding": {},
+  "main": "typedjs.js",
+  "types": "typedjs.d.ts",
+  "browser": {
+    "./typedjs.js": "./dist/typedjs.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "types": "tsc -p tsconfig.json",
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "fmt": "prettier --write \"**/*.js\""
+  },
+  "engines": {
+    "node": "18 || 20 || 21"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-metarhia": "^8.2.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
+  }
+}
