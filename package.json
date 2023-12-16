@@ -18,7 +18,7 @@
     "./typedjs.js": "./dist/typedjs.js"
   },
   "scripts": {
-    "test": "jest",
+    "test": "pnpm run fmt && jest",
     "types": "tsc -p tsconfig.json",
     "lint": "eslint . && prettier -c \"**/*.js\"",
     "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\""
