@@ -11,7 +11,7 @@
   "repository": {},
   "bugs": {},
   "homepage": "https://example.com",
-  "funding": {},
+  "funding": "https://example.com",
   "main": "typedjs.js",
   "types": "typedjs.d.ts",
   "browser": {
