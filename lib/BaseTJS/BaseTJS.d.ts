@@ -3,10 +3,13 @@ import type { Options } from '../types';
 export declare class BaseTJS {
   constructor(value: unknown);
 
+  static errorPrefix: 'TypedJS: ';
+
   static isPrimitive(
     value: unknown,
   ): value is number | string | undefined | null | symbol | bigint;
   static isNil(value: unknown): value is null | undefined;
+  static isSimpleObject(value: unknown): value is object;
 
   static getTypeErrorMessage(value: unknown, type: string): string; // TODO to finalize 'type' arg
   static buildTypeErrorMessage(valueType: string, type: string): string;
