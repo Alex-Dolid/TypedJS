@@ -4,14 +4,14 @@ __High-level abstractions for writing type-safe JavaScript code__
 
 Features(Goals):
 - [ ] Basic type-safe JavaScript API;
-  - [ ] Primitives/Scalar Data types
-    - [ ] TString
-    - [ ] TNumber
-    - [ ] TBigInt
-    - [ ] TBoolean
-    - [ ] TSymbol
-    - [ ] TNull
-    - [ ] TUndefined
+  - [x] Primitives/Scalar Data types
+    - [x] TString
+    - [x] TNumber
+    - [x] TBigInt
+    - [x] TBoolean
+    - [x] TSymbol
+    - [x] TNull
+    - [x] TUndefined
   - [ ] Reference Data types
     - [ ] TObject
     - [ ] TClass
@@ -23,17 +23,17 @@ Features(Goals):
     - [ ] TSet
     - [ ] TWeakSet
 - [ ] Addons
-  - [ ] Primitives/Scalar Data types
-    - [ ] TPosNumber
-    - [ ] TNegNumber
-    - [ ] TInt
-      - [ ] TPosInt
-      - [ ] TNegInt
-    - [ ] TFloat
-      - [ ] TPosFloat
-      - [ ] TNegFloat
-    - [ ] TPosBigInt
-    - [ ] TNegBigInt
+  - [x] Primitives/Scalar Data types
+    - [x] TPosNumber
+    - [x] TNegNumber
+    - [x] TInt
+      - [x] TPosInt
+      - [x] TNegInt
+    - [x] TFloat
+      - [x] TPosFloat
+      - [x] TNegFloat
+    - [x] TPosBigInt
+    - [x] TNegBigInt
   - [ ] Reference Data types
     - [ ] TRecord
     - [ ] TExtArray
@@ -43,4 +43,16 @@ Features(Goals):
     - [ ] TEnum
 - [ ] Types check in Runtime (static typing emulation; statically-typed language emulation);
 - [ ] Throw TypeError
-- [ ] Mode: strict
+- [ ] Mode: strict (non-casting)
+- [ ] Mode: casting (non-strict)
+- [ ] TypeScript support
+
+- [ ] Suggestions
+  - [ ] TInt8
+  - [ ] TInt16
+  - [ ] TInt32
+  - [ ] TUint8
+  - [ ] TUint16
+  - [ ] TUint32
+  - [ ] TFloat32
+  - [ ] TFloat64
