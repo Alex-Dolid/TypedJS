@@ -1,4 +1,4 @@
-# TypedJS
+# TypedJS [Draft]
 
 __High-level abstractions for writing type-safe JavaScript code__
 
