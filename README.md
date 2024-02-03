@@ -44,6 +44,8 @@ Features(Goals):
     - [x] TFloat
       - [x] TPosFloat
       - [x] TNegFloat
+    - [x] TFloat32
+    - [x] TFloat64
     - [x] TPosBigInt
     - [x] TNegBigInt
   - [ ] Reference Data types
@@ -59,6 +61,49 @@ Features(Goals):
 - [ ] Mode: casting (non-strict)
 - [ ] TypeScript support
 
+- [ ] Tests
+- [ ] Documentation
+- [ ] Examples
+- [ ] Benchmarks
+- [ ] Performance
+- [ ] Compatibility
+- [ ] Browser support
+- [ ] Node.js support
+
 - [ ] Suggestions
-  - [ ] TFloat32
-  - [ ] TFloat64
+  - [ ] TDate
+  - [ ] TRegExp
+  - [ ] TError
+  - [ ] TPromise
+  - [ ] TGenerator
+  - [ ] TAsyncGenerator
+  - [ ] TIterable
+  - [ ] TIterator
+  - [ ] TAsyncIterator
+  - [ ] TMapIterator
+  - [ ] TSetIterator
+  - [ ] TWeakMapIterator
+  - [ ] TWeakSetIterator
+  - [ ] TArrayBuffer
+  - [ ] TSharedArrayBuffer
+  - [ ] TDataView
+  - [ ] TTypedArray
+  - [ ] TInt8Array
+  - [ ] TUint8Array
+  - [ ] TInt8ClampedArray
+  - [ ] TInt16Array
+  - [ ] TUint16Array
+  - [ ] TInt32Array
+  - [ ] TUint32Array
+  - [ ] TFloat32Array
+  - [ ] TFloat64Array
+  - [ ] TBigInt64Array
+  - [ ] TBigUint64Array
+  - [ ] TWebAssembly
+  - [ ] TProxy
+  - [ ] TReflect
+  - [ ] TAtomics
+  - [ ] TSharedArrayBuffer
+  - [ ] TWeakRef
+  - [ ] TFinalizationRegistry
+  - [ ] TIntl
