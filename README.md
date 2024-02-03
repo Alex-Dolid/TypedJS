@@ -33,6 +33,8 @@ Features(Goals):
         - [x] TPosInt8
         - [x] TNegInt8
       - [x] TInt16
+        - [x] TPosInt16
+        - [x] TNegInt16
       - [x] TInt32
     - [x] TFloat
       - [x] TPosFloat
