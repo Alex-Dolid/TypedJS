@@ -31,6 +31,7 @@ Features(Goals):
       - [x] TNegInt
       - [x] TInt8
       - [x] TInt16
+      - [x] TInt32
     - [x] TFloat
       - [x] TPosFloat
       - [x] TNegFloat
@@ -50,7 +51,6 @@ Features(Goals):
 - [ ] TypeScript support
 
 - [ ] Suggestions
-  - [ ] TInt32
   - [ ] TUint8
   - [ ] TUint16
   - [ ] TUint32
