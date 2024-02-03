@@ -40,7 +40,7 @@ Features(Goals):
     - [ ] TTuple
   - [ ] Interfaces
     - [ ] TInterface
-    - [ ] TEnum
+    - [x] TEnum
 - [ ] Types check in Runtime (static typing emulation; statically-typed language emulation);
 - [ ] Throw TypeError
 - [ ] Mode: strict (non-casting)
