@@ -13,7 +13,7 @@ Features(Goals):
     - [x] TNull
     - [x] TUndefined
   - [ ] Reference Data types
-    - [ ] TObject
+    - [x] TObject
     - [ ] TClass
     - [ ] TArray
     - [ ] TFunction
