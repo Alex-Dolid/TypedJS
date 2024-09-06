@@ -49,7 +49,7 @@ Features(Goals):
     - [x] TPosBigInt
     - [x] TNegBigInt
   - [ ] Reference Data types
-    - [ ] TRecord
+    - [x] TRecord
     - [ ] TExtArray
     - [ ] TTuple
   - [ ] Interfaces
