@@ -7,8 +7,8 @@ The `TPosNumber` abstraction represents a type-safe number in the JavaScript run
 That is, the job of this abstraction is to check the input value for the correspondence of the positive `number` type at runtime.
 
 The `TPosNumber` abstraction has two modes:
-- `strict` - throws a `TypeError` if the input value is not a number
-- `casting` - tries to cast the input value to a number
+- `strict` - throws a `TypeError` if the input value is not a number or not a positive number
+- `casting` - tries to cast the input value to a number and then checks if it is a positive number
 
 ## API
 
@@ -34,19 +34,19 @@ The `TPosNumber` type has the following API:
     TPosNumber('42'); // 42
     TPosNumber('42.42'); // 42.42
     TPosNumber('42.42.42'); // TypeError: The value is not a number
-    TPosNumber(-42); // TypedJS: -42 is not a posnumber
-    TPosNumber(NaN); // TypedJS: NaN is not a number
-    TPosNumber(Infinity); // TypedJS: Infinity is not a number
-    TPosNumber(-Infinity); // TypedJS: -Infinity is not a number
+    TPosNumber(-42); // TypeError: TypedJS: -42 is not a posnumber
+    TPosNumber(NaN); // TypeError: TypedJS: NaN is not a number
+    TPosNumber(Infinity); // TypeError: TypedJS: Infinity is not a number
+    TPosNumber(-Infinity); // TypeError: TypedJS: -Infinity is not a number
 
     // strict mode
     TPosNumber(42, { strict: true }); // 42
     TPosNumber(42.42, { strict: true }); // 42.42
-    TPosNumber('42', { strict: true }); // TypedJS: '42' is not a number
-    TPosNumber('42.42', { strict: true }); // TypedJS: '42.42' is not a number
+    TPosNumber('42', { strict: true }); // TypeError: TypedJS: '42' is not a number
+    TPosNumber('42.42', { strict: true }); // TypeError: TypedJS: '42.42' is not a number
     TPosNumber('42.42.42', { strict: true }); // TypeError: The value is not a number
-    TPosNumber(-42, { strict: true }); // TypedJS: -42 is not a posnumber
-    TPosNumber(NaN, { strict: true }); // TypedJS: NaN is not a number
-    TPosNumber(Infinity, { strict: true }); // TypedJS: Infinity is not a number
-    TPosNumber(-Infinity, { strict: true }); // TypedJS: -Infinity is not a number
+    TPosNumber(-42, { strict: true }); // TypeError: TypedJS: -42 is not a posnumber
+    TPosNumber(NaN, { strict: true }); // TypeError: TypedJS: NaN is not a number
+    TPosNumber(Infinity, { strict: true }); // TypeError: TypedJS: Infinity is not a number
+    TPosNumber(-Infinity, { strict: true }); // TypeError: TypedJS: -Infinity is not a number
     ```

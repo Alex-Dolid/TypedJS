@@ -1,10 +1,31 @@
 # TNumber
+
 [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) --> `TNumber`
 
 Modules:
+
 - [TPosNumber](./TPosNumber/README.md)
 - [TNegNumber](./TNegNumber/README.md)
-- ...
+- [TInt](./TInt/README.md)
+  - [TPosInt](./TInt/TPosInt/README.md)
+  - [TNegInt](./TInt/TNegInt/README.md)
+  - [TInt8](./TInt/TInt8/README.md)
+    - [TPosInt8](./TInt/TInt8/TPosInt8/README.md)
+    - [TNegInt8](./TInt/TInt8/TNegInt8/README.md)
+  - [TUint8](./TInt/TUint8/README.md)
+  - [TInt16](./TInt/TInt16/README.md)
+    - [TPosInt16](./TInt/TInt16/TPosInt16/README.md)
+    - [TNegInt16](./TInt/TInt16/TNegInt16/README.md)
+  - [TUint16](./TInt/TUint16/README.md)
+  - [TInt32](./TInt/TInt32/README.md)
+    - [TPosInt32](./TInt/TInt32/TPosInt32/README.md)
+    - [TNegInt32](./TInt/TInt32/TNegInt32/README.md)
+  - [TUint32](./TInt/TUint32/README.md)
+- [TFloat](./TFloat/README.md)
+  - [TPosFloat](./TFloat/TPosFloat/README.md)
+  - [TNegFloat](./TFloat/TNegFloat/README.md)
+  - [TFloat32](./TFloat/TFloat32/README.md)
+  - [TFloat64](./TFloat/TFloat64/README.md)
 
 ## Description
 
@@ -45,17 +66,17 @@ The `TNumber` type has the following API:
     TNumer('42'); // 42
     TNumber('42.42'); // 42.42
     TNumber('42.42.42'); // TypeError: The value is not a number
-    TNumber(NaN); // TypedJS: NaN is not a number
-    TNumber(Infinity); // TypedJS: Infinity is not a number
-    TNumber(-Infinity); // TypedJS: -Infinity is not a number
+    TNumber(NaN); // TypeError: TypedJS: NaN is not a number
+    TNumber(Infinity); // TypeError: TypedJS: Infinity is not a number
+    TNumber(-Infinity); // TypeError: TypedJS: -Infinity is not a number
 
     // strict mode
     TNumber(42, { strict: true }); // 42
     TNumber(42.42, { strict: true }); // 42.42
-    TNumber('42', { strict: true }); // TypedJS: '42' is not a number
-    TNumber('42.42', { strict: true }); // TypedJS: '42.42' is not a number
+    TNumber('42', { strict: true }); // TypeError: TypedJS: '42' is not a number
+    TNumber('42.42', { strict: true }); // TypeError: TypedJS: '42.42' is not a number
     TNumber('42.42.42', { strict: true }); // TypeError: The value is not a number
-    TNumber(NaN, { strict: true }); // TypedJS: NaN is not a number
-    TNumber(Infinity, { strict: true }); // TypedJS: Infinity is not a number
-    TNumber(-Infinity, { strict: true }); // TypedJS: -Infinity is not a number
+    TNumber(NaN, { strict: true }); // TypeError: TypedJS: NaN is not a number
+    TNumber(Infinity, { strict: true }); // TypeError: TypedJS: Infinity is not a number
+    TNumber(-Infinity, { strict: true }); // TypeError: TypedJS: -Infinity is not a number
     ```

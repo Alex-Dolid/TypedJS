@@ -7,8 +7,8 @@ The `TNegNumber` abstraction represents a type-safe number in the JavaScript run
 That is, the job of this abstraction is to check the input value for the correspondence of the negative `number` type at runtime.
 
 The `TNegNumber` abstraction has two modes:
-- `strict` - throws a `TypeError` if the input value is not a number
-- `casting` - tries to cast the input value to a number
+- `strict` - throws a `TypeError` if the input value is not a number or not a negative number
+- `casting` - tries to cast the input value to a number and then checks if it is a negative number
 
 ## API
 
@@ -34,18 +34,18 @@ The `TNegNumber` type has the following API:
     TNegNumber('-42'); // -42
     TNegNumber('-42.42'); // -42.42
     TNegNumber('-42.42.42'); // TypeError: The value is not a number
-    TNegNumber(42); // TypedJS: 42 is not a negnumber
-    TNegNumber(NaN); // TypedJS: NaN is not a number
-    TNegNumber(Infinity); // TypedJS: Infinity is not a number
-    TNegNumber(-Infinity); // TypedJS: -Infinity is not a number
+    TNegNumber(42); // TypeError: TypedJS: 42 is not a negnumber
+    TNegNumber(NaN); // TypeError: TypedJS: NaN is not a number
+    TNegNumber(Infinity); // TypeError: TypedJS: Infinity is not a number
+    TNegNumber(-Infinity); // TypeError: TypedJS: -Infinity is not a number
 
     // strict mode
     TNegNumber(-42, { strict: true }); // -42
     TNegNumber(-42.42, { strict: true }); // -42.42
-    TNegNumber('-42', { strict: true }); // TypedJS: '-42' is not a number
-    TNegNumber('-42.42', { strict: true }); // TypedJS: '-42.42' is not a number
+    TNegNumber('-42', { strict: true }); // TypeError: TypedJS: '-42' is not a number
+    TNegNumber('-42.42', { strict: true }); // TypeError: TypedJS: '-42.42' is not a number
     TNegNumber('-42.42.42', { strict: true }); // TypeError: The value is not a number
-    TNegNumber(42, { strict: true }); // TypedJS: 42 is not a negnumber
-    TNegNumber(NaN, { strict: true }); // TypedJS: NaN is not a number
-    TNegNumber(Infinity, { strict: true }); // TypedJS: Infinity is not a number
+    TNegNumber(42, { strict: true }); // TypeError: TypedJS: 42 is not a negnumber
+    TNegNumber(NaN, { strict: true }); // TypeError: TypedJS: NaN is not a number
+    TNegNumber(Infinity, { strict: true }); // TypeError: TypedJS: Infinity is not a number
     ```
