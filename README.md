@@ -6,7 +6,7 @@ Features(Goals):
 
 - [ ] Basic type-safe JavaScript API;
   - [ ] Primitives/Scalar Data types
-    - [ ] TString
+    - [x] TString
     - [x] TNumber
     - [ ] TBigInt
     - [ ] TBoolean
