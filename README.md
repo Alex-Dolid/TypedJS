@@ -8,7 +8,7 @@ Features(Goals):
   - [ ] Primitives/Scalar Data types
     - [x] TString
     - [x] TNumber
-    - [ ] TBigInt
+    - [x] TBigInt
     - [ ] TBoolean
     - [ ] TSymbol
     - [ ] TNull
