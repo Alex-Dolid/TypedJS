@@ -1,20 +1,20 @@
-# TypedJS [Draft]
+# TypedJS [WIP]
 
 **High-level abstractions for writing type-safe JavaScript code**
 
 Features(Goals):
 
 - [ ] Basic type-safe JavaScript API;
-  - [x] Primitives/Scalar Data types
-    - [x] TString
+  - [ ] Primitives/Scalar Data types
+    - [ ] TString
     - [x] TNumber
-    - [x] TBigInt
-    - [x] TBoolean
-    - [x] TSymbol
-    - [x] TNull
-    - [x] TUndefined
+    - [ ] TBigInt
+    - [ ] TBoolean
+    - [ ] TSymbol
+    - [ ] TNull
+    - [ ] TUndefined
   - [ ] Reference Data types
-    - [x] TObject
+    - [ ] TObject
     - [ ] TClass
     - [ ] TArray
     - [ ] TFunction
@@ -47,15 +47,15 @@ Features(Goals):
       - [x] TNegFloat
     - [x] TFloat32
     - [x] TFloat64
-    - [x] TPosBigInt
-    - [x] TNegBigInt
+    - [ ] TPosBigInt
+    - [ ] TNegBigInt
   - [ ] Reference Data types
-    - [x] TRecord
+    - [ ] TRecord
     - [ ] TExtArray
     - [ ] TTuple
   - [ ] Interfaces
     - [ ] TInterface
-    - [x] TEnum
+    - [ ] TEnum
 - [ ] Types check in Runtime (static typing emulation; statically-typed language emulation);
 - [ ] Throw TypeError
 - [ ] Mode: strict (non-casting)
