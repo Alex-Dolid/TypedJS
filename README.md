@@ -1,8 +1,9 @@
 # TypedJS [Draft]
 
-__High-level abstractions for writing type-safe JavaScript code__
+**High-level abstractions for writing type-safe JavaScript code**
 
 Features(Goals):
+
 - [ ] Basic type-safe JavaScript API;
   - [x] Primitives/Scalar Data types
     - [x] TString
