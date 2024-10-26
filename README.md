@@ -47,8 +47,8 @@ Features(Goals):
       - [x] TNegFloat
     - [x] TFloat32
     - [x] TFloat64
-    - [ ] TPosBigInt
-    - [ ] TNegBigInt
+    - [x] TPosBigInt
+    - [x] TNegBigInt
   - [ ] Reference Data types
     - [ ] TRecord
     - [ ] TExtArray
