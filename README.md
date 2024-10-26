@@ -9,7 +9,7 @@ Features(Goals):
     - [x] TString
     - [x] TNumber
     - [x] TBigInt
-    - [ ] TBoolean
+    - [x] TBoolean
     - [ ] TSymbol
     - [ ] TNull
     - [ ] TUndefined
